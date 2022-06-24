@@ -13,6 +13,7 @@ class TextFieldScreen extends StatelessWidget {
         child: SizedBox(
           width: 250,
           child: TextFormField(
+            keyboardType: TextInputType.phone,
             decoration: const InputDecoration(
               labelText: 'Name',
               labelStyle: TextStyle(
@@ -37,7 +38,9 @@ class TextFieldScreen extends StatelessWidget {
                 // borderRadius: BorderRadius.all(Radius.circular(10)),
 
               ),
+
             ),
+
           ),
         ),
       ),
