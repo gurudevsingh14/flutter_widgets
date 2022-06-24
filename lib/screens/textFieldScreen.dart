@@ -13,9 +13,16 @@ class TextFieldScreen extends StatelessWidget {
         child: SizedBox(
           width: 250,
           child: TextFormField(
+            cursorColor: Colors.amber,
+            cursorHeight: 30,
+             //initialValue: 'gurudev',
+            maxLines: 5,
+            minLines: 1,
             keyboardType: TextInputType.phone,
             decoration: const InputDecoration(
+              hintText: 'name',
               labelText: 'Name',
+
               labelStyle: TextStyle(
                 fontSize: 18,
                 color: Colors.blue,
