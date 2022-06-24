@@ -18,11 +18,18 @@ class TextFieldScreen extends StatelessWidget {
              //initialValue: 'gurudev',
             maxLines: 5,
             minLines: 1,
-            keyboardType: TextInputType.phone,
+            keyboardType: TextInputType.emailAddress,
             decoration: const InputDecoration(
-              hintText: 'name',
-              labelText: 'Name',
+              hintText: 'Email',
+              labelText: 'Email',
+              // prefixIcon: Icon(Icons.mail,color: Colors.green),
+              prefixText: '+91',
+              prefixStyle: TextStyle(
+                fontSize: 18,
+                color: Colors.blue,
+                fontWeight: FontWeight.bold,
 
+              ),,
               labelStyle: TextStyle(
                 fontSize: 18,
                 color: Colors.blue,
