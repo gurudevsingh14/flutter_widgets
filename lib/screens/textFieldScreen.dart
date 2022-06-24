@@ -29,7 +29,7 @@ class TextFieldScreen extends StatelessWidget {
                 color: Colors.blue,
                 fontWeight: FontWeight.bold,
 
-              ),,
+              ),
               labelStyle: TextStyle(
                 fontSize: 18,
                 color: Colors.blue,
