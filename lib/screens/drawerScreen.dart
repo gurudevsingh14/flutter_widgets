@@ -27,18 +27,53 @@ class CustomDrawer extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Padding(
-      padding: EdgeInsets.only(top: 75,left: 20),
+      padding: EdgeInsets.only(top: 75,left: 0),
       child: Column(
-        mainAxisAlignment: MainAxisAlignment.start,
-        crossAxisAlignment: CrossAxisAlignment.start,
         children: [
-          CircleAvatar(
-            backgroundImage: AssetImage('asset/images/dp.jpg'),
-            radius: 40,
+          Container(
+            // color: Colors.red,
+            child: Column(
+              mainAxisAlignment: MainAxisAlignment.start,
+              crossAxisAlignment: CrossAxisAlignment.start,
+              children: [
+                CircleAvatar(
+                  backgroundImage: AssetImage('asset/images/dp.jpg'),
+                  radius: 40,
+                ),
+                Padding(
+                  padding: EdgeInsets.only(top: 15),
+                  child: Text('Gurudev Singh',
+                      style: TextStyle(fontFamily: '',
+                          fontSize: 20,
+                          fontWeight: FontWeight.bold)
+                  ),
+                ),
+                Container(
+                  // color: Colors.red,
+                  padding: EdgeInsets.only(top: 3),
+                  width: 260,
+                  child: Stack(
+                    children: [
+                      Text(
+                        'gurudev620.gs@gmail.com',
+                        style: TextStyle(
+                          color: Colors.grey,
+                        ),
+                      ),
+                      Positioned(
+                          right: 0,
+                          child:
+                          Icon(Icons.arrow_drop_down,color: Colors.grey,)
+                      )
+                    ],
+                  ),
+                ),
+              ],
+            ),
           )
-
         ],
       ),
+
     );
   }
 }
