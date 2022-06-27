@@ -32,6 +32,7 @@ class _CalculatorScreenState extends State<CalculatorScreen> {
             Row(
               mainAxisAlignment: MainAxisAlignment.spaceEvenly,
               children: [
+                Text('ghgh'),
                 SizedBox(
                   width: 100,
                   child: TextFormField(

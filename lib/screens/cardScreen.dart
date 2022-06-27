@@ -14,7 +14,6 @@ class CardScreen extends StatelessWidget {
           title: Text('Card'),
           backgroundColor: Colors.deepPurpleAccent),
       body: Card(
-
         elevation: 10,
         shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(6)),
         color: Colors.red,
