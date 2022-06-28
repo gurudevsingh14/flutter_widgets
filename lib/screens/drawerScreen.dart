@@ -60,7 +60,7 @@ class _CustomDrawerState extends State<CustomDrawer> {
               ),
               Text(
                 text,
-                style: TextStyle(color: selectedIndex==index?Colors.blueAccent:Colors.black,fontWeight: FontWeight.w500,fontSize: 16),
+                style: TextStyle(color: selectedIndex==index?Colors.blueAccent:Colors.black,fontWeight: FontWeight.bold,fontSize: 16,fontFamily: 'Roboto'),
               )
             ],
           )
